@@ -153,7 +153,7 @@
             visibility: visible;
             opacity: 1;
             height: 85vh;
-            min-width: 75%;
+            min-width: 60%;
             margin-top: 100px;
             background-color: #25274d;
             transform: translate(0,0);
@@ -324,6 +324,80 @@
                     }
                 }
             }
+        }
+    }
+    nav#navbar{
+        .nav-link{
+                visibility: hidden;
+                opacity: 0;
+                margin-top: 0;
+                z-index: -1;
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                right: 0;
+                top: 0;
+                background-color: transparent;
+                transform: translate(100%,-100%);
+                transition: all .3s;
+
+                ul{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                }
+        }
+        .button-contact{
+            cursor: pointer;
+            height: 70px;
+            width: 175px;
+            padding: 23px 0;
+            display: none;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(100%, 0);
+            border: solid 1px #2e9cca;
+            border-radius: 10px;
+            transition: all .3s;
+            
+            a{
+                text-decoration: none;
+                color: #2e9cca;
+            }
+        }
+        .menu-toggle{
+            display: flex;
+            animation: toggleAnimasi .3s ease 1 forwards;
+            transition: all .3s;
+        }
+        @keyframes toggleAnimasi {
+            from{
+                opacity: 0;
+                transform: translateX(100%);  
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .bucon-mobile{
+            display: flex;
+            visibility: visible;
+            animation: toggleAnimasi .3s ease 1 forwards;
+            transition: all .3s;
+        }
+        .slide{
+            box-shadow: inset 0px 10px 5px -10px black;
+            visibility: visible;
+            opacity: 1;
+            height: 85vh;
+            min-width: 100%;
+            margin-top: 100px;
+            background-color: #25274d;
+            transform: translate(0,0);
+            transition: all .3s;
         }
     }
 }
