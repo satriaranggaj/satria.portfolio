@@ -1,0 +1,273 @@
+body {
+  font-family: 'Caveat', cursive;
+  font-family: 'Inter', sans-serif;
+}
+
+#bio {
+  min-height: 300px;
+  width: 100%;
+  background-color: #25274d;
+  color: white;
+  padding: 50px 25px 50px 25px;
+  margin-top: 100px;
+}
+
+#bio .container .desc p {
+  font-size: calc(.3vw + .7rem);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: justify;
+}
+
+#bio .container .button-bio {
+  cursor: pointer;
+  height: calc(.58vw + 1.6rem);
+  width: calc(4vw + 7rem);
+  margin-top: 35px;
+  background-color: #2e9cca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  border: solid 1px #2e9cca;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#bio .container .button-bio a {
+  color: #25274d;
+  text-decoration: none;
+  font-size: calc(.3vw + .7rem);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#bio .container .button-bio:hover {
+  background-color: transparent;
+}
+
+#bio .container .button-bio:hover a {
+  color: #2e9cca;
+}
+
+#passion {
+  min-height: 500px;
+  width: 100%;
+  background-color: #25274d;
+  color: white;
+  padding: 50px 25px 50px 25px;
+}
+
+#passion .container {
+  /* Animasi scroll */
+}
+
+#passion .container .title {
+  margin-bottom: 25px;
+}
+
+#passion .container .title h3 {
+  color: #2e9cca;
+  font-weight: bold;
+}
+
+#passion .container .desc {
+  margin-bottom: 50px;
+}
+
+#passion .container .desc p {
+  font-size: calc(.3vw + .7rem);
+  text-align: justify;
+}
+
+#passion .container .skill-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+#passion .container .skill-carousel .carousel-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-animation: scrollAnimation 15s linear infinite;
+          animation: scrollAnimation 15s linear infinite;
+  /* Sesuaikan kecepatan dan durasi scroll */
+  width: calc(150px * 21);
+  will-change: transform;
+}
+
+#passion .container .skill-carousel .carousel-content .carousel-slide {
+  width: 150px;
+  height: calc(1vw + 3rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#passion .container .skill-carousel .carousel-content .carousel-slide img {
+  height: 100%;
+  -webkit-filter: drop-shadow(3px 0px 2px black);
+          filter: drop-shadow(3px 0px 2px black);
+}
+
+@-webkit-keyframes scrollAnimation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-150px * 11));
+            transform: translateX(calc(-150px * 11));
+  }
+}
+
+@keyframes scrollAnimation {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-150px * 11));
+            transform: translateX(calc(-150px * 11));
+  }
+}
+
+#project {
+  min-height: 500px;
+  width: 100%;
+  background-color: #25274d;
+  color: white;
+  padding: 50px 25px 50px 25px;
+}
+
+#project .container-fluid .title {
+  margin-bottom: 75px;
+}
+
+#project .container-fluid .title h3 {
+  color: #2e9cca;
+  font-weight: bold;
+}
+
+#project .container-fluid .project-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+}
+
+#project .container-fluid .project-content .left-project {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#project .container-fluid .project-content .left-project .project-card {
+  max-height: 350px;
+  width: 95%;
+  background: url(../../img/project/comprof-klm.png), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: url(../../img/project/comprof-klm.png), linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  border-radius: 15px;
+  padding: 40% 25px 25px 25px;
+  text-align: start;
+}
+
+#project .container-fluid .project-content .left-project .project-card .title-project h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#project .container-fluid .project-content .left-project .project-card a {
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#project .container-fluid .project-content .left-project .project-card a:hover {
+  color: lightgray;
+}
+
+#project .container-fluid .project-content .right-project {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#project .container-fluid .project-content .right-project .container-project {
+  width: calc(100% / 3);
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#project .container-fluid .project-content .right-project .container-project .project-card {
+  width: 250px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#project .container-fluid .project-content .right-project .container-project .project-card .thumbnail {
+  height: 75px;
+  width: 75px;
+  margin-right: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#project .container-fluid .project-content .right-project .container-project .project-card .title h6 {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#project .container-fluid .project-content .right-project .container-project .project-card .title a {
+  color: white;
+  font-size: .7rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#project .container-fluid .project-content .right-project .container-project .project-card .title a:hover {
+  color: lightgray;
+}
+/*# sourceMappingURL=main.css.map */

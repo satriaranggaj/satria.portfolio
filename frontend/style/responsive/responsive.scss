@@ -1,0 +1,404 @@
+@media screen and (max-width: 1350px) {
+    nav#navbar{
+        .nav-link{
+            width: 60%;
+        }
+    }
+    #project{
+        .container-fluid{
+            .project-content{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                .left-project{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 50px;
+    
+                    .project-card{
+                        max-height: 350px;
+                        width: 100%;
+                        background: url(../../img/project/comprof-klm.png), linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-blend-mode: darken;
+                        border-radius: 15px;
+                        padding: calc(3vw + 15rem) 25px 25px 25px;
+                        text-align: start;
+    
+                        a{
+                            color: white;
+                            font-size: 1rem;
+                            transition: all .3s;
+                        }
+                        a:hover{
+                            color: lightgray;
+                        }
+                    }
+                }
+                .right-project{
+                    width: 100%;
+                    display: flex;
+                    
+                    .container-project{
+                        width: calc(100% / 3);
+                        margin: 0 10px;
+                        display: flex;
+                        flex-direction: column;
+    
+                        .project-card{
+                            width: 250px;
+                            height: 75px;
+                            display: flex;
+    
+                            .thumbnail{
+                                height: 75px;
+                                width: 75px;
+                                margin-right: 15px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                            }
+                            .title{
+                                h6{
+                                    margin: 0;
+                                }
+                                a{
+                                    color: white;
+                                    font-size: .7rem;
+                                    transition: all .3s;
+                                }
+                                a:hover{
+                                    color: lightgray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ukuran kedua
+@media screen and (max-width: 1200px) {
+}
+// ukuran ketiga
+@media screen and (max-width: 1050px) {
+    nav#navbar{
+        .nav-link{
+                visibility: hidden;
+                opacity: 0;
+                margin-top: 0;
+                z-index: -1;
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                right: 0;
+                top: 0;
+                background-color: transparent;
+                transform: translate(100%,-100%);
+                transition: all .3s;
+
+                ul{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                }
+        }
+        .button-contact{
+            cursor: pointer;
+            height: 70px;
+            width: 175px;
+            padding: 23px 0;
+            display: none;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(100%, 0);
+            border: solid 1px #2e9cca;
+            border-radius: 10px;
+            transition: all .3s;
+            
+            a{
+                text-decoration: none;
+                color: #2e9cca;
+            }
+        }
+        .menu-toggle{
+            display: flex;
+            animation: toggleAnimasi .3s ease 1 forwards;
+            transition: all .3s;
+        }
+        @keyframes toggleAnimasi {
+            from{
+                opacity: 0;
+                transform: translateX(100%);  
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .bucon-mobile{
+            display: flex;
+            visibility: visible;
+            animation: toggleAnimasi .3s ease 1 forwards;
+            transition: all .3s;
+        }
+        .slide{
+            box-shadow: inset 0px 10px 5px -10px black;
+            visibility: visible;
+            opacity: 1;
+            height: 85vh;
+            min-width: 60%;
+            margin-top: 100px;
+            background-color: #25274d;
+            transform: translate(0,0);
+            transition: all .3s;
+        }
+    }
+}
+// ukuran keempat
+@media screen and (max-width: 900px) {
+    #project{
+        .container-fluid{
+            .project-content{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                .left-project{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 50px;
+    
+                    .project-card{
+                        max-height: 350px;
+                        width: 100%;
+                        background: url(../../img/project/comprof-klm.png), linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-blend-mode: darken;
+                        border-radius: 15px;
+                        padding: calc(3vw + 15rem) 25px 25px 25px;
+                        text-align: start;
+    
+                        a{
+                            color: white;
+                            font-size: 1rem;
+                            transition: all .3s;
+                        }
+                        a:hover{
+                            color: lightgray;
+                        }
+                    }
+                }
+                .right-project{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    
+                    .container-project{
+                        width: calc(100% / 3);
+                        margin: 0 10px;
+                        display: flex;
+                        flex-direction: column;
+    
+                        .project-card{
+                            width: 100%;
+                            height: 75px;
+                            display: flex;
+                            margin: 10px 0;
+    
+                            .thumbnail{
+                                height: 75px;
+                                width: 75px;
+                                margin-right: 15px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                            }
+                            .title{
+                                h6{
+                                    margin: 0;
+                                }
+                                a{
+                                    color: white;
+                                    font-size: .7rem;
+                                    transition: all .3s;
+                                }
+                                a:hover{
+                                    color: lightgray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// ukuran mobile
+@media screen and (max-width: 750px) {
+    #project{
+        .container-fluid{
+            .project-content{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+    
+                .left-project{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 50px;
+    
+                    .project-card{
+                        max-height: 250px;
+                        width: 100%;
+                        background: url(../../img/project/comprof-klm.png), linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-blend-mode: darken;
+                        border-radius: 15px;
+                        padding: calc(3vw + 5rem) 25px 25px 25px;
+                        text-align: start;
+    
+                        a{
+                            color: white;
+                            font-size: 1rem;
+                            transition: all .3s;
+                        }
+                        a:hover{
+                            color: lightgray;
+                        }
+                    }
+                }
+                .right-project{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .container-project{
+                        width: 100%;
+                        margin: 0 10px;
+                        display: flex;
+                        flex-direction: column;
+    
+                        .project-card{
+                            width: 100%;
+                            height: 75px;
+                            display: flex;
+                            margin: 10px 0;
+    
+                            .thumbnail{
+                                height: 75px;
+                                width: 75px;
+                                margin-right: 15px;
+                                border-radius: 10px;
+                                overflow: hidden;
+                            }
+                            .title{
+                                h6{
+                                    margin: 0;
+                                }
+                                a{
+                                    color: white;
+                                    font-size: .7rem;
+                                    transition: all .3s;
+                                }
+                                a:hover{
+                                    color: lightgray;
+                                }
+                            }
+                        }
+                    }
+                    .two, .three{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 350px) {
+    nav#navbar{
+        .nav-link{
+                visibility: hidden;
+                opacity: 0;
+                margin-top: 0;
+                z-index: -1;
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                right: 0;
+                top: 0;
+                background-color: transparent;
+                transform: translate(100%,-100%);
+                transition: all .3s;
+
+                ul{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                }
+        }
+        .button-contact{
+            cursor: pointer;
+            height: 70px;
+            width: 175px;
+            padding: 23px 0;
+            display: none;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(100%, 0);
+            border: solid 1px #2e9cca;
+            border-radius: 10px;
+            transition: all .3s;
+            
+            a{
+                text-decoration: none;
+                color: #2e9cca;
+            }
+        }
+        .menu-toggle{
+            display: flex;
+            animation: toggleAnimasi .3s ease 1 forwards;
+            transition: all .3s;
+        }
+        @keyframes toggleAnimasi {
+            from{
+                opacity: 0;
+                transform: translateX(100%);  
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .bucon-mobile{
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        .slide{
+            box-shadow: inset 0px 10px 5px -10px black;
+            visibility: visible;
+            opacity: 1;
+            height: 85vh;
+            min-width: 100%;
+            margin-top: 100px;
+            background-color: #25274d;
+            transform: translate(0,0);
+            transition: all .3s;
+        }
+    }
+}
