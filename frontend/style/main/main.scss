@@ -207,3 +207,86 @@ body{
         }
     }
 }
+#blog{
+    min-height: 500px;
+    width: 100%;
+    background-color: #25274d;
+    color: white;
+    padding: 50px 25px 50px 25px;
+    .container{
+        .title{
+            margin-bottom: 75px;
+            h3{
+                color: #2e9cca;
+                font-weight: bold;
+            }
+        }
+        .content{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+
+            .blog-card{
+                max-width: 300px;
+                max-height: 450px;
+                padding-bottom: 25px;
+                background-color: white;
+                color: black;
+                border-radius: 15px;
+                overflow: hidden;
+
+                .thumbnail{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .teks{
+                    .title{
+                        margin: 10px 0 10px 15px;
+                        h5{
+                            color: #25274d;
+                            font-weight: bold;
+                        }
+                    }
+                    .desc{
+                        margin: 0 15px 25px 15px;
+
+                        p{
+                            font-size: calc(.1vw + .7rem);
+                            text-align: start;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 6;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                        }
+                    }
+                    .button-more{
+                        cursor: pointer;
+                        height: 35px;
+                        width: 150px;
+                        background-color: #25274d;
+                        line-height: 35px;
+                        border-radius: 10px;
+                        border: solid 1px #25274d;
+                        transition: .3s;
+
+                        a{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                    .button-more:hover{
+                        background-color: transparent;
+                        line-height: 35px;
+                        border-radius: 10px;
+
+                        a{
+                            color: #25274d;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
