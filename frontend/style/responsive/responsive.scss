@@ -328,6 +328,32 @@
         }
     }
 }
+@media screen and (max-width: 800px) {
+    footer{
+        .container{
+            .foot-link{
+                ul{
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+            .others{
+                flex-direction: column;
+                align-items: center;
+
+                .language{
+                    text-align: center;
+                }
+                .sosmed{
+                    margin: 50px 0;
+                }
+                .copyright{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 // ukuran mobile
 @media screen and (max-width: 750px) {
     #project{

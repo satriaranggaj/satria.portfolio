@@ -379,4 +379,30 @@ body {
   background-color: #2e9cca;
   color: white;
 }
+
+#biografi {
+  min-height: 300px;
+  width: 100%;
+  background-color: #25274d;
+  color: white;
+  padding: 50px 25px 50px 25px;
+  margin-top: 100px;
+}
+
+#biografi .container .title h1 {
+  color: #2e9cca;
+  font-weight: 900;
+  margin: 0;
+}
+
+#biografi .container .foto-profil {
+  width: 250px;
+  margin: 50px auto;
+}
+
+#biografi .container .foto-profil img {
+  width: 100%;
+  border-radius: 50%;
+  border: solid 5px #1a1b3b;
+}
 /*# sourceMappingURL=main.css.map */
