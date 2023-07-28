@@ -320,19 +320,21 @@ body{
     margin-top: 100px;
     .container{
         .title{
-                h1{
-                    color: #2e9cca;
-                    font-weight: 900;
-                    margin: 0;  
+            h1{
+                color: #2e9cca;
+                font-weight: 900;
+                margin: 0;  
+            }
+    }
+        .data-diri{
+            .foto-profil{
+                width: 250px;
+                margin: 50px auto;
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                    border: solid 5px #1a1b3b;
                 }
-        }
-        .foto-profil{
-            width: 250px;
-            margin: 50px auto;
-            img{
-                width: 100%;
-                border-radius: 50%;
-                border: solid 5px #1a1b3b;
             }
         }
     }
