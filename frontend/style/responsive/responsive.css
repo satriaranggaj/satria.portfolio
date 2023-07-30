@@ -254,7 +254,7 @@
     font-size: calc(.1vw + .7rem);
     text-align: start;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -279,6 +279,160 @@
     border-radius: 10px;
   }
   #blog .container .content .blog-card .teks .button-more:hover a {
+    color: #25274d;
+    text-decoration: none;
+  }
+  #project-page .container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #project-page .container .content .project-card {
+    min-width: 100%;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #project-page .container .content .project-card .picture {
+    min-height: 150px;
+    max-height: 350px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  #project-page .container .content .project-card .picture img {
+    width: 100%;
+  }
+  #project-page .container .content .project-card .title {
+    margin: 15px 0px 10px 0px;
+    padding: 0 25px 0 25px;
+    height: 50px;
+    width: 100%;
+  }
+  #project-page .container .content .project-card .title h5 {
+    color: #25274d;
+    font-weight: bold;
+  }
+  #project-page .container .content .project-card .button-more {
+    cursor: pointer;
+    height: 35px;
+    width: 125px;
+    background-color: #25274d;
+    margin-left: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #25274d;
+    border-radius: 5px;
+  }
+  #project-page .container .content .project-card .button-more a {
+    text-decoration: none;
+    color: white;
+  }
+  #project-page .container .content .project-card .button-more:hover {
+    background-color: transparent;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  #project-page .container .content .project-card .button-more:hover a {
+    color: #25274d;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  #blog-page {
+    min-height: 300px;
+    width: 100%;
+    background-color: #25274d;
+    color: white;
+    padding: 50px 25px 50px 25px;
+    margin-top: 100px;
+  }
+  #blog-page .container .title {
+    margin-bottom: 75px;
+  }
+  #blog-page .container .title h1 {
+    color: #2e9cca;
+    font-weight: bold;
+  }
+  #blog-page .container .content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #blog-page .container .content .blog-card {
+    max-width: 500px;
+    max-height: 475px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  #blog-page .container .content .blog-card .thumbnail img {
+    width: 100%;
+  }
+  #blog-page .container .content .blog-card .teks .title {
+    margin: 10px 0 10px 15px;
+  }
+  #blog-page .container .content .blog-card .teks .title h5 {
+    color: #25274d;
+    font-weight: bold;
+  }
+  #blog-page .container .content .blog-card .teks .desc {
+    margin: 0 15px 25px 15px;
+  }
+  #blog-page .container .content .blog-card .teks .desc p {
+    font-size: calc(.1vw + .7rem);
+    text-align: start;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  #blog-page .container .content .blog-card .teks .button-more {
+    cursor: pointer;
+    height: 35px;
+    width: 150px;
+    background-color: #25274d;
+    line-height: 35px;
+    border-radius: 10px;
+    border: solid 1px #25274d;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  #blog-page .container .content .blog-card .teks .button-more a {
+    color: white;
+    text-decoration: none;
+  }
+  #blog-page .container .content .blog-card .teks .button-more:hover {
+    background-color: transparent;
+    line-height: 35px;
+    border-radius: 10px;
+  }
+  #blog-page .container .content .blog-card .teks .button-more:hover a {
     color: #25274d;
     text-decoration: none;
   }
@@ -718,6 +872,77 @@
     background-color: #25274d;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  #project-page .container .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #project-page .container .content .project-card {
+    min-width: 100%;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin: 25px;
+    padding-bottom: 25px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  #project-page .container .content .project-card .picture {
+    min-height: 100px;
+    max-height: 100px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  #project-page .container .content .project-card .picture img {
+    width: 100%;
+  }
+  #project-page .container .content .project-card .title {
+    margin: 5px 0px 5px 0px;
+    padding: 0 10px 0 10px;
+    height: 50px;
+    width: 100%;
+  }
+  #project-page .container .content .project-card .title h5 {
+    color: #25274d;
+    font-weight: bold;
+  }
+  #project-page .container .content .project-card .button-more {
+    cursor: pointer;
+    height: 35px;
+    width: 125px;
+    background-color: #25274d;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #25274d;
+    border-radius: 5px;
+  }
+  #project-page .container .content .project-card .button-more a {
+    text-decoration: none;
+    color: white;
+  }
+  #project-page .container .content .project-card .button-more:hover {
+    background-color: transparent;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  #project-page .container .content .project-card .button-more:hover a {
+    color: #25274d;
     -webkit-transition: all .3s;
     transition: all .3s;
   }
