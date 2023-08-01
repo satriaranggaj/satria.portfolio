@@ -608,4 +608,38 @@ body {
   color: #25274d;
   text-decoration: none;
 }
+
+#certificate {
+  min-height: 300px;
+  width: 100%;
+  background-color: #25274d;
+  color: white;
+  padding: 50px 25px 50px 25px;
+  margin-top: 100px;
+}
+
+#certificate .container .title {
+  margin-bottom: 75px;
+}
+
+#certificate .container .title h1 {
+  color: #2e9cca;
+  font-weight: bold;
+}
+
+#certificate .container .content .list-certificate p {
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+#certificate .container .content .list-certificate a {
+  color: #2e9cca;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#certificate .container .content .list-certificate a:hover {
+  color: aqua;
+}
 /*# sourceMappingURL=main.css.map */
