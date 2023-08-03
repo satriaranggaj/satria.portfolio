@@ -642,4 +642,50 @@ body {
 #certificate .container .content .list-certificate a:hover {
   color: aqua;
 }
+
+#contact {
+  min-height: 300px;
+  width: 100%;
+  background-color: #25274d;
+  color: white;
+  padding: 50px 25px 50px 25px;
+  margin-top: 100px;
+}
+
+#contact .container {
+  padding: 0 2.5rem;
+}
+
+#contact .container .title {
+  margin-bottom: 75px;
+}
+
+#contact .container .title h1 {
+  color: #2e9cca;
+  font-weight: bold;
+}
+
+#contact .container .content .list-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact .container .content .list-contact p {
+  margin-right: 5px;
+  margin-bottom: 0;
+}
+
+#contact .container .content .list-contact a {
+  color: #2e9cca;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#contact .container .content .list-contact a:hover {
+  color: #64d1ff;
+}
 /*# sourceMappingURL=main.css.map */
