@@ -1,9 +1,9 @@
 footer {
-  min-height: 350px;
+  min-height: 250px;
   width: 100%;
   background-color: #25274d;
   color: white;
-  padding: 100px 0;
+  padding: 100px 0 5px 0;
 }
 
 footer .container {
@@ -75,27 +75,8 @@ footer .container .others {
           align-items: center;
 }
 
-footer .container .others .language {
-  width: 100%;
-}
-
-footer .container .others .language select {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid rgba(128, 128, 128, 0.5);
-  color: rgba(128, 128, 128, 0.5);
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-footer .container .others .language select:hover {
-  color: white;
-  border-bottom: 2px solid white;
-}
-
 footer .container .others .sosmed {
-  width: 100%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,12 +97,13 @@ footer .container .others .sosmed a:hover {
   color: white;
 }
 
-footer .container .others .copyright {
+footer .container .copyright {
+  margin-top: 100px;
   width: 100%;
-  text-align: end;
+  text-align: center;
 }
 
-footer .container .others .copyright p {
+footer .container .copyright p {
   color: rgba(128, 128, 128, 0.5);
 }
 /*# sourceMappingURL=footer.css.map */

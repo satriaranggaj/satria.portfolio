@@ -45,4 +45,8 @@ form.addEventListener('submit', e => {
   })
 
 
+// switch bahasa
 
+function switchToEnglish() {
+  document.getElementById
+}
