@@ -42,11 +42,4 @@ form.addEventListener('submit', e => {
       console.log('Success!', response)
     })
     .catch(error => console.error('Error!', error.message))
-  })
-
-
-// switch bahasa
-
-function switchToEnglish() {
-  document.getElementById
-}
+  });
